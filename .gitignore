@@ -57,3 +57,4 @@ chroma_db/
 *.zip
 *.7z
 *.rar
+.pytest_cache/

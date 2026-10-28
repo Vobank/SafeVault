@@ -1,5 +1,7 @@
 # Сейф · SafeVault
 
+[![tests](https://github.com/Vobank/SafeVault/actions/workflows/tests.yml/badge.svg)](https://github.com/Vobank/SafeVault/actions/workflows/tests.yml)
+
 **[Русский](#русский) · [English](#english)**
 
 > 🌐 **Язык интерфейса: только русский** · **Interface language: Russian only**
@@ -56,3 +58,12 @@ The password is stored nowhere — if you forget it, the data is gone. Use only 
 
 ### Технологии / Tech
 Python · cryptography (AES-256-GCM, scrypt) · Tkinter
+
+---
+
+### Тесты / Tests
+```
+pip install -r requirements.txt pytest
+pytest
+```
+Проверяют шифрование/расшифровку, отказ при неверном пароле и при подмене байтов, формат файла. / Cover encrypt/decrypt round-trips, wrong-password and tamper rejection, and the file format.
